@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chloe Counter</title>
-    <!-- To link external styling file -->
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <h1>ChloeCounter</h1>
-    <p>Click the button to count how many times localmax mentions "C...e"!</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chloe Counter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <button onclick="changeText()">Chloe Count +1</button>
-    <button class="reset-button" onclick="resetCount()">Reset</button>
+  <!-- Bio wrapper -->
+  <section class="bio-card">
+    <img src="images/mycat.jpg" alt="Photo of Beautiful White Cat" class="bio-photo" />
 
-    <div class="counter-box">
-        <p id="dynamic-text">Chris has mentioned Chloe 0 times.</p>
+    <div class="bio-text">
+      <h1>Chloe Count</h1>
+      <p>
+        Cassia is a Human Resources Manager. Her name is short for Cognitive Autonomous Surveillance System for Infiltration and Assassination.
+        She enjoys running and viciously swiping at strangers. Do not play Cassia. You have been warned. - Management
+      </p>
+
+      <p>
+        Click the button to count how many times localmax mentions "C...e"!
+      </p>
+
+      <button onclick="changeText()">Chloe Count +1</button>
+      <button class="reset-button" onclick="resetCount()">Reset</button>
+      <div class="counter-wrapper">
+        <div class="counter-box">
+          <p id="dynamic-text">
+            Chris has mentioned Chloe <strong>0</strong> times!
+          </p>
+        </div>
+        <!-- OCROBOTICS_LOGO.png -->
+        <img src="images/OCROBOTICS_LOGO.png" alt="OC Robotics Logo" class="counter-logo">
+      </div>
     </div>
+  </section>
 
-    <!-- <img src="images/chloe.jpg" alt="Photo of Chloe smiling"> -->
+  <section class="final-remark">
+    <h2>WORDS</h2>
+    <p>Thanks for visiting and testing the Chloe Counter!</p>
+  </section>
 
-    <section class="bio-card">
-        <img src="images/chloe.jpg" alt="Photo of Chloe" class="bio-photo" />
-        <section class="bio-text">
-            <h1>Chloe</h1>
+  <footer>
+    <p>&copy; 2025 OC Robotics • WEBDEV 101 Project | Worked on by Via</p>
+  </footer>
 
-            <p>
-                Chloe is a robotics enthusiast who enjoys robotics, machine learning, and engaging
-                in engineering fields. She is current contributing to OC Robotics!
-            </p>
-        </section>
-    </section>
-    <section class="bio-text">
-
-
-    <a>This demonstration was conducted as part of the WEBDEV 101 thread for OC Robotics.</a>
-
-    <footer>
-        <p>&copy; 2025 OC Robotics • WEBDEV 101 Project</p>
-    </footer>
-    <script src="script.js"></script>
-    <!-- To link external javascript file -->
-    <script src="script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
